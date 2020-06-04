@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,11 +6,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   loadedFeature = 'recipe';
 
-  onNavigate(feature: string){
+  onNavigate(feature: string) {
     this.loadedFeature = feature;
   }
-  
 }
