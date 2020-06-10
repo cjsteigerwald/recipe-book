@@ -1,16 +1,15 @@
-import { RecipeService } from './../recipe.service';
-import { DataStorageService } from './../../shared/data-storage.service';
 import { Injectable } from '@angular/core';
 import {
   Resolve,
   ActivatedRouteSnapshot,
-  RouterStateSnapshot,
+  RouterStateSnapshot
 } from '@angular/router';
-import { Recipe } from '../recipe.model';
 
-@Injectable({
-  providedIn: 'root',
-})
+import { Recipe } from './recipe.model';
+import { DataStorageService } from '../shared/data-storage.service';
+import { RecipeService } from './recipe.service';
+
+@Injectable({ providedIn: 'root' })
 export class RecipesResolverService implements Resolve<Recipe[]> {
   constructor(
     private dataStorageService: DataStorageService,
@@ -22,6 +21,8 @@ export class RecipesResolverService implements Resolve<Recipe[]> {
 
     if (recipes.length === 0) {
       return this.dataStorageService.fetchRecipes();
+    } else {
+      return recipes;
     }
   }
 }
