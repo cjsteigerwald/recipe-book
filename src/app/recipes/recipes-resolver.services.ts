@@ -4,9 +4,9 @@ import {
   ActivatedRouteSnapshot,
   RouterStateSnapshot,
 } from '@angular/router';
-import { Recipe } from '../recipe.model';
+import { Recipe } from './recipe.model';
 import { DataStorageService } from 'src/app/shared/data-storage.service';
-import { RecipeService } from '../recipe.service';
+import { RecipeService } from './recipe.service';
 
 
 
