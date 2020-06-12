@@ -1,3 +1,4 @@
+import { LoggingService } from './loggin.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -16,7 +17,7 @@ import { CoreModule } from './core.module';
     SharedModule,
     CoreModule,
   ],
-  providers: [],
+  providers: [LoggingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
