@@ -1,9 +1,9 @@
 .backdrop {
   position: fixed;
   top: 0;
-  bottom: 0;
+  left: 0;
   width: 100vw;
-  height: 100;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.75);
   z-index: 50;
 }
@@ -16,9 +16,9 @@
   padding: 16px;
   z-index: 100;
   background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 8px rbga(0, 0, 0, 0.26);
 }
 
-.alet-box-actions {
+.alert-box-actions {
   text-align: right;
 }

@@ -1,7 +1,3 @@
-// test user
-// email: test@test.com
-// password: test123
-
 export class User {
   constructor(
     public email: string,
@@ -16,4 +12,4 @@ export class User {
     }
     return this._token;
   }
-} // User{}
+}
